@@ -8,8 +8,8 @@
 </p>
 
 ---
+<h2 align="center">👨‍💻 About Me</h2>
 
-### 👨‍💻 About Me
 
 - 🌍 I'm based in **Hanoi, Vietnam**.
 - 🎯 My goal is to develop high-quality web products, focusing on performance optimization and user experience.
@@ -22,8 +22,7 @@
 - ⚡ Fun fact: **When I'm not coding, you can find me playing badminton, doing photography, or hanging out with my cat, Mon!**
 
 ---
-
-### 💼 Work Experience
+<h2 align="center">💼 Work Experience</h2>
 
 💼 **Web Developer** @ **[Koolsoft](https://koolsoft.vn/)** ⸺ ``Dec 2024 - Present``
 > *Developing e-learning solutions for businesses and training organizations.*
@@ -42,7 +41,7 @@
 
 ---
 
-### 🚀 Featured Projects
+<h2 align="center">🚀 Featured Projects</h2>
 
 #### 🔮 DCASKS *(Web3 & Telegram Mini App)*
 > *A comprehensive Web3 ecosystem and Telegram Mini App for real-world asset tokenization and live auctions.*
@@ -70,7 +69,7 @@
   
 ---
 
-### 🛠 Languages and Tools
+<h2 align="center">🛠 Languages and Tools</h2>
 
 <p align="center">
   <!-- Frontend -->
@@ -98,7 +97,7 @@
 
 ---
 
-### 📫 Connect with me
+<h2 align="center">📫 Connect with me</h2>
 
 <p align="center">
   <a href="mailto:tienhg201@gmail.com">
