@@ -70,23 +70,6 @@
 
 ---
 
-### 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=tienhg13102001&label=Profile%20Views&color=2780E3&style=for-the-badge" alt="Profile Views" />
-</p>
-
-<p align="center">
-  <img height="195" src="https://github-readme-stats.vercel.app/api?username=tienhg13102001&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="GitHub Stats" />
-  <img height="195" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tienhg13102001&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=tienhg13102001&theme=radical&hide_border=true" width="96.5%" alt="GitHub Streak" />
-</p>
-
----
-
 ### 📫 Connect with me
 
 <p align="center">
