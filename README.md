@@ -61,6 +61,22 @@
 - **Performance Optimization:** Refactored legacy components into a modular, loosely coupled architecture. Boosted page load speeds by optimizing asset sizes and rendering logic.
 - **Tech Stack:** `React.js` | `Styled-components` | `Node.js` | `Express.js` | `MongoDB`
 
+**📸 Yume Studio** — *Studio Management & Web Platform*
+> A comprehensive web application managing studio operations, self-hosted and fully containerized.
+
+* **System Architecture:** Built a complete flow from UI to REST API with secure nested routing. Handled complex database transactions to ensure data consistency.
+* **DevOps & Deployment:** Fully containerized the application using `Docker Compose`. Configured `VPS`, `Synology NAS`, and `Nginx` reverse proxies with SSL certificates for secure, reliable deployment.
+* **Live Demo:** [web.yumest.synology.me](https://web.yumest.synology.me/)
+* **Tech Stack:** `React.js` | `Node.js` | `MongoDB` | `Docker` | `Nginx` | `Synology NAS`
+
+**🐝 Beezvn Studio** — *Media-rich Studio Platform*
+> A professional web portfolio introducing Beezvn Studio, featuring advanced media handling and video streaming capabilities.
+
+* **Large Media Handling:** Engineered a robust chunk video upload system to process large media files reliably, preventing network timeouts and optimizing server memory load during studio asset management.
+* **Video Streaming & Playback:** Implemented efficient video streaming protocols to ensure smooth, buffer-free playback and an optimal user experience when clients view high-quality studio showcases.
+* **Live Demo:** [beezvn.com](https://beezvn.com/)
+* **Tech Stack:** `React.js` | `Node.js` | `Express` | `Chunk Upload` | `Video Streaming` | `Cloudflare`
+
 #### 📱 MKT TIKPRO *(Desktop Automation Tool)*
 > *Cross-platform desktop application to concurrently manage thousands of TikTok accounts.*
 - **Desktop Architecture:** Built with `Electron.js`, optimizing Inter-Process Communication (IPC) to prevent UI freezing during heavy-duty tasks.
