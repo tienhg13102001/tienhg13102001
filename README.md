@@ -45,24 +45,28 @@
 ### 🚀 Featured Projects
 
 #### 🔮 DCASKS *(Web3 & Telegram Mini App)*
-> *A high-performance Telegram Mini App and modular backend.*
-- **Highlights:** Built real-time notifications using Socket.io and Redis.
-- **Tech Stack:** `Next.js 15` | `Telegram SDK` | `NestJS` | `PostgreSQL` | `Redis`
+> *A comprehensive Web3 ecosystem and Telegram Mini App for real-world asset tokenization and live auctions.*
+- **Frontend & Web3:** Developed a high-performance Telegram Mini App using `Next.js 15` and `Telegram SDK`. Integrated `Viem` for smart contracts (real-time bidding, asset minting) and `Reown` (WalletConnect) for secure multi-wallet linking.
+- **Backend & Real-time:** Built a modular `NestJS` backend with `Telegram Bot API` for automated alerts. Implemented `Socket.io` and `Redis Pub/Sub` to deliver instant, real-time notifications for auction statuses and outbid events.
+- **Tech Stack:** `Next.js 15` | `Tailwind CSS` | `Wagmi/Viem` | `NestJS` | `PostgreSQL` | `MongoDB` | `Redis`
 
-#### 📚 Estudyme *(E-learning Platform)*
-> *A scalable educational platform with complex course management.*
-- **Highlights:** Engineered responsive interfaces and customized MUI component library. Built scalable ExpressJS RESTful APIs.
-- **Tech Stack:** `Next.js` | `Express.js` | `Material UI` | `Redux`
+#### 📚 Estudyme *(E-learning Platform & Game Services)*
+> *A scalable educational platform integrating complex course management and core game services.*
+- **Frontend Architecture:** Engineered pixel-perfect, responsive `Next.js` interfaces from Figma. Developed a customized `Material UI` component library, accelerating feature development time by 30%. Managed complex global states using `Redux Toolkit`.
+- **Backend & API Design:** Architected scalable `Express.js` RESTful APIs for multi-level course management and shared backend modules for new game titles. Refactored database models into clean repository layers.
+- **Tech Stack:** `Next.js 12` | `Express.js` | `Material UI` | `Redux Toolkit`
 
-#### 📱 MKT TIKPRO *(Automation Tool)*
-> *Cross-platform desktop application to manage thousands of TikTok accounts.*
-- **Highlights:** Integrated browser automation (Puppeteer/Playwright) to minimize ban rates and automate workflows.
-- **Tech Stack:** `Electron.js` | `React.js` | `Puppeteer` | `Playwright`
+#### 📱 MKT TIKPRO *(Desktop Automation Tool)*
+> *Cross-platform desktop application to concurrently manage thousands of TikTok accounts.*
+- **Desktop Architecture:** Built with `Electron.js`, optimizing Inter-Process Communication (IPC) to prevent UI freezing during heavy-duty tasks.
+- **Browser Automation & Data Mining:** Integrated `Puppeteer`/`Playwright` to simulate authentic user behaviors and minimize ban rates. Engineered data mining modules for lead extraction and configured automated seeding workflows.
+- **Tech Stack:** `Electron.js` | `React.js` | `Tailwind CSS` | `Puppeteer` | `Playwright` | `Socket.io` | `SQLite`
 
-#### 📝 Ngoại ngữ 24h *(Internal Tooling)*
-> *Automated the formatting of raw exam files into structured database records.*
-- **Highlights:** Boosted page load speeds and refactored legacy components into a modular architecture.
-- **Tech Stack:** `React.js` | `Node.js` | `Express.js` | `MongoDB`
+#### 📝 Ngoại ngữ 24h *(Internal Admin Tooling)*
+> *System modernization and process automation for an educational platform.*
+- **Process Automation:** Developed internal tools to automate the formatting of raw exam files into structured database records, significantly reducing content update times.
+- **Performance Optimization:** Refactored legacy components into a modular, loosely coupled architecture. Boosted page load speeds by optimizing asset sizes and rendering logic.
+- **Tech Stack:** `React.js` | `Styled-components` | `Node.js` | `Express.js` | `MongoDB`
   
 ---
 
