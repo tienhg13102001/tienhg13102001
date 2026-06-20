@@ -1,52 +1,66 @@
-<h1 align="center">Hi 👋, I'm Nguyễn Văn Tiến</h1>
-<h3 align="center">A passionate Fullstack Developer from Vietnam</h3>
+<h1 align="center">Hi there 👋, I'm Nguyễn Văn Tiến</h1>
+<h3 align="center">Fullstack Developer | DevOps Enthusiast | Photographer</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=tienhg13102001&label=Profile%20views&color=0e75b6&style=flat" alt="tienhg13102001" /> </p>
-
-<p align="left">
-  <a href="https://github.com/tienhg13102001">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=22&pause=1000&color=2780E3&center=false&vCenter=true&width=500&lines=Fullstack+Web+Developer;React.js+%2B+Node.js;DevOps+Enthusiast" alt="Typing SVG" />
+<p align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=22&pause=1000&color=2780E3&center=true&vCenter=true&width=500&lines=Fullstack+Web+Developer;React.js+%2B+Node.js;Docker+%26+VPS+Lover;Badminton+Player+%26+Cat+Dad" alt="Typing SVG" />
   </a>
 </p>
 
-- 🏢 I’m currently working at **Koolsoft Inc**
+---
 
-- 🔭 I’m currently developing **Yume Studio**
+### 👨‍💻 Về bản thân
 
-- 🌱 I’m currently learning deeper about **Docker, Nginx, and Server Deployment**
+- 🌍 Mình đến từ Hà Nội, Việt Nam.
+- 💻 Hiện đang tập trung phát triển các ứng dụng web với **React.js** và **Node.js**.
+- 🚀 Quản lý và phát triển dự án **Yume Studio**.
+- 🛠 Đam mê tìm hiểu về vận hành hệ thống, container hóa (**Docker, Docker Compose**), và cấu hình server (**VPS, Nginx, SSL**).
+- 🏸 Khi không gõ code, mình thường đi đánh cầu lông, xách máy ảnh đi chụp choẹt hoặc chơi với bé mèo tên Mon ở nhà.
 
-- 💬 Ask me about **React.js, Node.js, Express, and MongoDB**
+---
 
-- 📫 How to reach me **tienhg201@gmail.com**
+### 🛠 Kỹ năng & Công nghệ
 
-- ⚡ Fun fact **When I'm not coding, I'm usually playing badminton, doing photography, or hanging out with my cat, Mon!**
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://www.linkedin.com/in/bryan-tien-nguyen/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" /></a>
-<a href="https://www.facebook.com/tienptgrh/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="Facebook" height="30" width="40" /></a>
+<p align="center">
+  <!-- Frontend -->
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+  <br>
+  <!-- Backend & Database -->
+  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express" />
+  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" />
+  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
+  <br>
+  <!-- DevOps & Tools -->
+  <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> 
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> 
-  <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> 
-  <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> 
-  <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> 
-  <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> 
-  <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> 
-  <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> 
-  <a href="https://www.nginx.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="nginx" width="40" height="40"/> </a> 
-  <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> 
-  <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> 
+---
+
+### 📊 Thống kê GitHub
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=tienhg13102001&show_icons=true&theme=radical&hide_border=true" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tienhg13102001&layout=compact&theme=radical&hide_border=true" width="48%" />
 </p>
 
-<h3 align="left">GitHub Stats:</h3>
-<p align="left">
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img src="https://github-readme-stats.vercel.app/api?username=tienhg13102001&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="tienhg13102001's GitHub stats" />
+---
+
+### 📫 Liên hệ với mình
+
+<p align="center">
+  <a href="mailto:tienhg13102001@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tienhg13102001&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
+  <a target="_blank" href="https://www.facebook.com/tienptgrh/">
+    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" />
+  </a>
+  <a target="_blank" href="www.linkedin.com/in/bryan-tien-nguyen">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
 </p>
