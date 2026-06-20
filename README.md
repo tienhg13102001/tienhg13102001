@@ -43,12 +43,19 @@
 ---
 
 ### 📊 Thống kê GitHub
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=tienhg13102001&label=Profile%20views&color=0e75b6&style=flat" alt="tienhg13102001" /> </p>
+
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=tienhg13102001&show_icons=true&theme=radical&hide_border=true" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tienhg13102001&layout=compact&theme=radical&hide_border=true" width="48%" />
+  <img src="https://komarev.com/ghpvc/?username=tienhg13102001&label=Lượt%20xem%20Profile&color=2780E3&style=for-the-badge" alt="Profile Views" />
 </p>
 
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=tienhg13102001&show_icons=true&theme=radical&hide_border=true&count_private=true" width="48%" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tienhg13102001&layout=compact&theme=radical&hide_border=true" width="48%" alt="Top Languages" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=tienhg13102001&theme=radical&hide_border=true" width="96.5%" alt="GitHub Streak" />
+</p>
 ---
 
 ### 📫 Liên hệ với mình
