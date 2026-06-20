@@ -11,34 +11,34 @@
 
 ### 👨‍💻 About Me
 
-- 🌍 I'm based in **Hanoi, Vietnam**[cite: 1].
-- 🎯 My goal is to develop high-quality web products, focusing on performance optimization and user experience[cite: 1].
-- 🏢 I’m currently working full-time at **Koolsoft Inc**[cite: 1].
-- 🌙 I also work as a part-time Web Developer at **DCASKS** in the evenings, building Web3 and Telegram Mini Apps[cite: 1].
+- 🌍 I'm based in **Hanoi, Vietnam**.
+- 🎯 My goal is to develop high-quality web products, focusing on performance optimization and user experience.
+- 🏢 I’m currently working full-time at **Koolsoft Inc**.
+- 🌙 I also work as a part-time Web Developer at **DCASKS** in the evenings, building Web3 and Telegram Mini Apps.
 - 🚀 I’m actively developing and managing **Yume Studio**.
 - 🛠 Passionate about system administration, containerization (**Docker, Docker Compose**), and server deployment (**VPS, Nginx, SSL**).
 - 💬 Ask me about **React/Next.js, Node/NestJS, and Database Optimization**.
-- 📫 How to reach me: **tienhg201@gmail.com**[cite: 1].
+- 📫 How to reach me: **tienhg201@gmail.com**.
 - ⚡ Fun fact: **When I'm not coding, you can find me playing badminton, doing photography, or hanging out with my cat, Mon!**
 
 ---
 
 ### 💼 Work Experience
 
-- **Web Developer** @ [Koolsoft](https://koolsoft.vn/) *(Dec 2024 - Present)*: Developing e-learning solutions for businesses and training organizations[cite: 1].
-- **Web Developer** @ DCASKS *(Dec 2024 - Present)*: Building a blockchain ecosystem and Telegram Mini App for the wine and spirits industry[cite: 1].
-- **Node.js Developer** @ Vitech Group *(Jun 2024 - Dec 2024)*: Developed custom Windows applications for enterprise clients and internal operations[cite: 1].
-- **Frontend Developer** @ Rocket Game Studio *(Jun 2023 - Jun 2024)*: Developed global mobile games in Casual, Hyper-casual, and Mid-core genres[cite: 1].
-- **Web Developer Intern** @ NTQ Solution JSC *(Jan 2023 - Jun 2023)*: Delivered tech solutions and digital transformation services to global markets[cite: 1].
+- **Web Developer** @ [Koolsoft](https://koolsoft.vn/) *(Dec 2024 - Present)*: Developing e-learning solutions for businesses and training organizations.
+- **Web Developer** @ DCASKS *(Dec 2024 - Present)*: Building a blockchain ecosystem and Telegram Mini App for the wine and spirits industry.
+- **Node.js Developer** @ Vitech Group *(Jun 2024 - Dec 2024)*: Developed custom Windows applications for enterprise clients and internal operations.
+- **Frontend Developer** @ Rocket Game Studio *(Jun 2023 - Jun 2024)*: Developed global mobile games in Casual, Hyper-casual, and Mid-core genres.
+- **Web Developer Intern** @ NTQ Solution JSC *(Jan 2023 - Jun 2023)*: Delivered tech solutions and digital transformation services to global markets.
 
 ---
 
 ### 🚀 Featured Projects
 
-*   **DCASKS (Web3 & Telegram Mini App):** Developed a high-performance Telegram Mini App using Next.js 15 and Telegram SDK[cite: 1]. Built a modular NestJS backend with real-time notifications using Socket.io and Redis[cite: 1].
-*   **Estudyme:** Engineered responsive Next.js interfaces and a customized MUI component library[cite: 1]. Built scalable ExpressJS RESTful APIs for complex course management[cite: 1].
-*   **MKT TIKPRO:** Built a cross-platform Electron.js app to concurrently manage thousands of TikTok accounts with integrated browser automation (Puppeteer/Playwright)[cite: 1].
-*   **Ngoại ngữ 24h:** Developed internal tools to automate the formatting of raw exam files into structured database records, boosting page load speeds[cite: 1].
+*   **DCASKS (Web3 & Telegram Mini App):** Developed a high-performance Telegram Mini App using Next.js 15 and Telegram SDK. Built a modular NestJS backend with real-time notifications using Socket.io and Redis.
+*   **Estudyme:** Engineered responsive Next.js interfaces and a customized MUI component library. Built scalable ExpressJS RESTful APIs for complex course management.
+*   **MKT TIKPRO:** Built a cross-platform Electron.js app to concurrently manage thousands of TikTok accounts with integrated browser automation (Puppeteer/Playwright).
+*   **Ngoại ngữ 24h:** Developed internal tools to automate the formatting of raw exam files into structured database records, boosting page load speeds.
 
 ---
 
