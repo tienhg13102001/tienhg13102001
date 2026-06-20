@@ -9,13 +9,15 @@
 
 ---
 
-### 👨‍💻 Về bản thân
+### 👨‍💻 About Me
 
-- 🌍 Mình đến từ Hà Nội, Việt Nam.
-- 💻 Hiện đang tập trung phát triển các ứng dụng web với **React.js** và **Node.js**.
-- 🚀 Quản lý và phát triển dự án **Yume Studio**.
-- 🛠 Đam mê tìm hiểu về vận hành hệ thống, container hóa (**Docker, Docker Compose**), và cấu hình server (**VPS, Nginx, SSL**).
-- 🏸 Khi không gõ code, mình thường đi đánh cầu lông, xách máy ảnh đi chụp choẹt hoặc chơi với bé mèo tên Mon ở nhà.
+- 🌍 I'm based in **Hanoi, Vietnam**.
+- 🏢 I’m currently working at **Koolsoft Inc**.
+- 🚀 I’m actively developing and managing **Yume Studio**.
+- 🛠 Passionate about system administration, containerization (**Docker, Docker Compose**), and server deployment (**VPS, Nginx, SSL**).
+- 💬 Ask me about **React.js, Node.js, Express, and MongoDB**.
+- 📫 How to reach me: **tienhg201@gmail.com**.
+- ⚡ Fun fact: **When I'm not coding, you can find me playing badminton, doing photography, or hanging out with my cat, Mon!**
 
 ---
 
