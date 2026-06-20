@@ -25,21 +25,45 @@
 
 ### 💼 Work Experience
 
-- **Web Developer** @ [Koolsoft](https://koolsoft.vn/) *(Dec 2024 - Present)*: Developing e-learning solutions for businesses and training organizations.
-- **Web Developer** @ DCASKS *(Dec 2024 - Present)*: Building a blockchain ecosystem and Telegram Mini App for the wine and spirits industry.
-- **Node.js Developer** @ Vitech Group *(Jun 2024 - Dec 2024)*: Developed custom Windows applications for enterprise clients and internal operations.
-- **Frontend Developer** @ Rocket Game Studio *(Jun 2023 - Jun 2024)*: Developed global mobile games in Casual, Hyper-casual, and Mid-core genres.
-- **Web Developer Intern** @ NTQ Solution JSC *(Jan 2023 - Jun 2023)*: Delivered tech solutions and digital transformation services to global markets.
+💼 **Web Developer** @ **[Koolsoft](https://koolsoft.vn/)** ⸺ ``Dec 2024 - Present``
+> *Developing e-learning solutions for businesses and training organizations.*
+
+🌙 **Web Developer (Part-time)** @ **DCASKS** ⸺ ``Dec 2024 - Present``
+> *Building a blockchain ecosystem and Telegram Mini App for the wine and spirits industry.*
+
+💻 **Node.js Developer** @ **Vitech Group** ⸺ ``Jun 2024 - Dec 2024``
+> *Developed custom Windows applications for enterprise clients and internal operations.*
+
+🎮 **Frontend Developer** @ **Rocket Game Studio** ⸺ ``Jun 2023 - Jun 2024``
+> *Developed global mobile games in Casual, Hyper-casual, and Mid-core genres.*
+
+🌱 **Web Developer Intern** @ **NTQ Solution JSC** ⸺ ``Jan 2023 - Jun 2023``
+> *Delivered tech solutions and digital transformation services to global markets.*
 
 ---
 
 ### 🚀 Featured Projects
 
-*   **DCASKS (Web3 & Telegram Mini App):** Developed a high-performance Telegram Mini App using Next.js 15 and Telegram SDK. Built a modular NestJS backend with real-time notifications using Socket.io and Redis.
-*   **Estudyme:** Engineered responsive Next.js interfaces and a customized MUI component library. Built scalable ExpressJS RESTful APIs for complex course management.
-*   **MKT TIKPRO:** Built a cross-platform Electron.js app to concurrently manage thousands of TikTok accounts with integrated browser automation (Puppeteer/Playwright).
-*   **Ngoại ngữ 24h:** Developed internal tools to automate the formatting of raw exam files into structured database records, boosting page load speeds.
+#### 🔮 DCASKS *(Web3 & Telegram Mini App)*
+> *A high-performance Telegram Mini App and modular backend.*
+- **Highlights:** Built real-time notifications using Socket.io and Redis.
+- **Tech Stack:** `Next.js 15` | `Telegram SDK` | `NestJS` | `PostgreSQL` | `Redis`
 
+#### 📚 Estudyme *(E-learning Platform)*
+> *A scalable educational platform with complex course management.*
+- **Highlights:** Engineered responsive interfaces and customized MUI component library. Built scalable ExpressJS RESTful APIs.
+- **Tech Stack:** `Next.js` | `Express.js` | `Material UI` | `Redux`
+
+#### 📱 MKT TIKPRO *(Automation Tool)*
+> *Cross-platform desktop application to manage thousands of TikTok accounts.*
+- **Highlights:** Integrated browser automation (Puppeteer/Playwright) to minimize ban rates and automate workflows.
+- **Tech Stack:** `Electron.js` | `React.js` | `Puppeteer` | `Playwright`
+
+#### 📝 Ngoại ngữ 24h *(Internal Tooling)*
+> *Automated the formatting of raw exam files into structured database records.*
+- **Highlights:** Boosted page load speeds and refactored legacy components into a modular architecture.
+- **Tech Stack:** `React.js` | `Node.js` | `Express.js` | `MongoDB`
+  
 ---
 
 ### 🛠 Languages and Tools
