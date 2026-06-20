@@ -55,18 +55,18 @@
 - **Backend & API Design:** Architected scalable `Express.js` RESTful APIs for multi-level course management and shared backend modules for new game titles. Refactored database models into clean repository layers.
 - **Tech Stack:** `Next.js 12` | `Express.js` | `Material UI` | `Redux Toolkit`
 
+#### 📝 Ngoại ngữ 24h *(Internal Admin Tooling)*
+> *System modernization and process automation for an educational platform.*
+- **Process Automation:** Developed internal tools to automate the formatting of raw exam files into structured database records, significantly reducing content update times.
+- **Performance Optimization:** Refactored legacy components into a modular, loosely coupled architecture. Boosted page load speeds by optimizing asset sizes and rendering logic.
+- **Tech Stack:** `React.js` | `Styled-components` | `Node.js` | `Express.js` | `MongoDB`
+
 #### 📱 MKT TIKPRO *(Desktop Automation Tool)*
 > *Cross-platform desktop application to concurrently manage thousands of TikTok accounts.*
 - **Desktop Architecture:** Built with `Electron.js`, optimizing Inter-Process Communication (IPC) to prevent UI freezing during heavy-duty tasks.
 - **Browser Automation & Data Mining:** Integrated `Puppeteer`/`Playwright` to simulate authentic user behaviors and minimize ban rates. Engineered data mining modules for lead extraction and configured automated seeding workflows.
 - **Tech Stack:** `Electron.js` | `React.js` | `Tailwind CSS` | `Puppeteer` | `Playwright` | `Socket.io` | `SQLite`
 
-#### 📝 Ngoại ngữ 24h *(Internal Admin Tooling)*
-> *System modernization and process automation for an educational platform.*
-- **Process Automation:** Developed internal tools to automate the formatting of raw exam files into structured database records, significantly reducing content update times.
-- **Performance Optimization:** Refactored legacy components into a modular, loosely coupled architecture. Boosted page load speeds by optimizing asset sizes and rendering logic.
-- **Tech Stack:** `React.js` | `Styled-components` | `Node.js` | `Express.js` | `MongoDB`
-  
 ---
 
 <h2 align="center">🛠 Languages and Tools</h2>
