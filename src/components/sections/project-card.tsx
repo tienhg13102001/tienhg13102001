@@ -1,18 +1,17 @@
 import Link from "next/link";
-import Image from "next/image";
-import { ArrowUpRight, FolderGit2, Globe } from "lucide-react";
+import { ArrowUpRight, FolderGit2 } from "lucide-react";
 import type { Project } from "@prisma/client";
 import { Badge } from "@/components/ui/badge";
 
-interface ProjectCardProps {
+export function ProjectCard({
+  project,
+  index,
+}: {
   project: Project;
   index: number;
-  priority?: boolean;
-}
-
-export function ProjectCard({ project, index, priority = false }: ProjectCardProps) {
+}) {
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-xl border bg-card/50 text-card-foreground shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/50 hover:bg-card">
+    <article className="group relative flex flex-col overflow-hidden rounded-xl border border-border bg-card transition-all hover:-translate-y-1 hover:border-foreground/30 hover:shadow-lg hover:shadow-foreground/5">
       <Link
         href={`/projects/${project.slug}`}
         className="absolute inset-0 z-10"
@@ -20,11 +19,12 @@ export function ProjectCard({ project, index, priority = false }: ProjectCardPro
       />
 
       {project.coverImage ? (
-        <div className="relative aspect-video w-full overflow-hidden border-b border-border bg-muted">
+        <div className="aspect-video w-full overflow-hidden border-b border-border bg-muted">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={project.coverImage}
             alt={project.title}
-            className="size-full object-cover transition-transform duration-500 group-hover:scale-110"
+            className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
         </div>
       ) : (
@@ -41,47 +41,35 @@ export function ProjectCard({ project, index, priority = false }: ProjectCardPro
           <ArrowUpRight className="size-4 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-foreground" />
         </div>
 
-        <h3 className="mb-2 text-xl font-bold tracking-tight text-foreground">
+        <h3 className="text-lg font-semibold tracking-tight text-foreground">
           {project.title}
         </h3>
 
         {project.summary ? (
-          <p className="mb-4 line-clamp-3 text-sm text-muted-foreground">
+          <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">
             {project.summary}
           </p>
         ) : null}
 
-        <div className="mt-auto flex flex-wrap gap-2 pb-4">
+        <div className="mt-auto flex flex-wrap items-center gap-1.5 pt-6">
           {project.tags.slice(0, 4).map((tag) => (
-            <Badge key={tag} variant="secondary" className="bg-primary/10 text-primary hover:bg-primary/20">
+            <Badge key={tag} variant="outline" className="font-mono">
               {tag}
             </Badge>
           ))}
-        </div>
-
-        <div className="flex items-center gap-4 pt-2">
-          {project.liveUrl && (
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary"
-            >
-              <Globe className="h-4 w-4" />
-              Live Demo
-            </a>
-          )}
-          {project.repoUrl && (
-            <a
-              href={project.repoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary"
-            >
-              <FolderGit2 className="h-4 w-4" />
-              Source Code
-            </a>
-          )}
+          {project.repoUrl ? (
+            <span className="relative z-20 ml-auto">
+              <Link
+                href={project.repoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Repository"
+                className="flex size-7 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+              >
+                <FolderGit2 className="size-3.5" />
+              </Link>
+            </span>
+          ) : null}
         </div>
       </div>
     </article>
