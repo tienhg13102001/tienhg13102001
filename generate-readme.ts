@@ -62,28 +62,25 @@ async function main() {
   if (skills.length > 0) {
     readme += `## 🛠️ Tech Stack & Skills\n\n`;
     
-    // Mermaid Tree Chart
+    // Mermaid Mindmap
     readme += `\`\`\`mermaid\n`;
-    readme += `graph LR\n`;
-    readme += `  Root((Tech Stack))\n`;
+    readme += `mindmap\n`;
+    readme += `  root((Tech Stack))\n`;
     
     const categories = Array.from(new Set(skills.map(s => s.category || "Other")));
     let nodeId = 0;
     
     for (const cat of categories) {
       const catId = `cat_${nodeId++}`;
-      readme += `  Root --> ${catId}["${cat}"]\n`;
-      readme += `  style ${catId} fill:#27272a,stroke:#38bdf8,stroke-width:2px,color:#fff\n`;
+      readme += `    ${catId}["${cat}"]\n`;
       
       const catSkills = skills.filter(s => (s.category || "Other") === cat);
       for (const skill of catSkills) {
         const skillId = `skill_${nodeId++}`;
-        readme += `  ${catId} --- ${skillId}("${skill.name}")\n`;
-        readme += `  style ${skillId} fill:#18181b,stroke:#52525b,stroke-width:1px,color:#d4d4d8\n`;
+        readme += `      ${skillId}("${skill.name}")\n`;
       }
     }
     
-    readme += `  style Root fill:#0ea5e9,stroke:#0369a1,stroke-width:2px,color:#fff\n`;
     readme += `\`\`\`\n\n`;
 
     // Compact Badge Grid (Optional, keep for colorful logos)

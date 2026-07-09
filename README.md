@@ -22,39 +22,23 @@ As a Fullstack Developer with a strong foundation in JavaScript and practical ex
 ## 🛠️ Tech Stack & Skills
 
 ```mermaid
-graph LR
-  Root((Tech Stack))
-  Root --> cat_0["Backend"]
-  style cat_0 fill:#27272a,stroke:#38bdf8,stroke-width:2px,color:#fff
-  cat_0 --- skill_1("Node.js")
-  style skill_1 fill:#18181b,stroke:#52525b,stroke-width:1px,color:#d4d4d8
-  Root --> cat_2["Database"]
-  style cat_2 fill:#27272a,stroke:#38bdf8,stroke-width:2px,color:#fff
-  cat_2 --- skill_3("PostgreSQL")
-  style skill_3 fill:#18181b,stroke:#52525b,stroke-width:1px,color:#d4d4d8
-  cat_2 --- skill_4("MongoDB")
-  style skill_4 fill:#18181b,stroke:#52525b,stroke-width:1px,color:#d4d4d8
-  Root --> cat_5["DevOps"]
-  style cat_5 fill:#27272a,stroke:#38bdf8,stroke-width:2px,color:#fff
-  cat_5 --- skill_6("Docker / Docker Compose")
-  style skill_6 fill:#18181b,stroke:#52525b,stroke-width:1px,color:#d4d4d8
-  Root --> cat_7["Frontend"]
-  style cat_7 fill:#27272a,stroke:#38bdf8,stroke-width:2px,color:#fff
-  cat_7 --- skill_8("React / Next.js")
-  style skill_8 fill:#18181b,stroke:#52525b,stroke-width:1px,color:#d4d4d8
-  Root --> cat_9["Language"]
-  style cat_9 fill:#27272a,stroke:#38bdf8,stroke-width:2px,color:#fff
-  cat_9 --- skill_10("Javascript")
-  style skill_10 fill:#18181b,stroke:#52525b,stroke-width:1px,color:#d4d4d8
-  cat_9 --- skill_11("TypeScript")
-  style skill_11 fill:#18181b,stroke:#52525b,stroke-width:1px,color:#d4d4d8
-  Root --> cat_12["Server"]
-  style cat_12 fill:#27272a,stroke:#38bdf8,stroke-width:2px,color:#fff
-  cat_12 --- skill_13("Nginx")
-  style skill_13 fill:#18181b,stroke:#52525b,stroke-width:1px,color:#d4d4d8
-  cat_12 --- skill_14("Linux / VPS")
-  style skill_14 fill:#18181b,stroke:#52525b,stroke-width:1px,color:#d4d4d8
-  style Root fill:#0ea5e9,stroke:#0369a1,stroke-width:2px,color:#fff
+mindmap
+  root((Tech Stack))
+    cat_0["Backend"]
+      skill_1("Node.js")
+    cat_2["Database"]
+      skill_3("PostgreSQL")
+      skill_4("MongoDB")
+    cat_5["DevOps"]
+      skill_6("Docker / Docker Compose")
+    cat_7["Frontend"]
+      skill_8("React / Next.js")
+    cat_9["Language"]
+      skill_10("Javascript")
+      skill_11("TypeScript")
+    cat_12["Server"]
+      skill_13("Nginx")
+      skill_14("Linux / VPS")
 ```
 
 <p align="center">
