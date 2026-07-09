@@ -1,52 +1,69 @@
+"use client";
+
 import type { Profile } from "@prisma/client";
 import { FadeIn } from "@/components/ui/fade-in";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { getFileUrl } from "@/lib/utils";
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-function getInitials(name: string) {
-  return name
-    .split(" ")
-    .filter(Boolean)
-    .slice(0, 2)
-    .map((part) => part[0]?.toUpperCase())
-    .join("");
-}
+gsap.registerPlugin(ScrollTrigger);
 
 export function AboutSection({ profile }: { profile: Profile | null }) {
-  const fullName = profile?.fullName ?? "Your Name";
-  const bio =
-    profile?.bio ??
-    "Add a short bio in the admin dashboard to introduce yourself here — your background, what drives you, and what you're focused on right now.";
+  const bio = profile?.bio || "Full Stack Developer building digital experiences.";
+  
+  const containerRef = useRef<HTMLDivElement>(null);
+  const textRef = useRef<HTMLDivElement>(null);
+
+  useGSAP(
+    () => {
+      if (!textRef.current) return;
+      
+      const paragraphs = textRef.current.querySelectorAll("p");
+      
+      gsap.fromTo(
+        paragraphs,
+        { opacity: 0.2, y: 20 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          stagger: 0.2,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: textRef.current,
+            start: "top 80%",
+            end: "bottom 60%",
+            scrub: true,
+          },
+        }
+      );
+    },
+    { scope: containerRef }
+  );
 
   return (
-    <section className="border-b border-border/70">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-20 sm:px-6 lg:grid-cols-[auto_1fr] lg:gap-16 lg:px-8">
-        <div className="flex items-start gap-4 lg:flex-col lg:gap-6">
-          <Avatar size="lg" className="size-16 lg:size-24">
-            <AvatarImage src={profile?.avatarUrl ? getFileUrl(profile.avatarUrl) : undefined} alt={fullName} />
-            <AvatarFallback className="text-lg lg:text-2xl">
-              {getInitials(fullName)}
-            </AvatarFallback>
-          </Avatar>
-          <div className="font-mono text-xs text-muted-foreground">
-            <span className="text-primary">01.</span> About
+    <section ref={containerRef} className="border-b border-border/70 bg-muted/30">
+      <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
+        <div className="grid gap-12 lg:grid-cols-12 lg:gap-8">
+          <div className="lg:col-span-4">
+            <FadeIn>
+              <div className="font-mono text-xs text-muted-foreground">
+                <span className="text-primary">01.</span> About
+              </div>
+              <h2 className="mt-2 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+                Background
+              </h2>
+            </FadeIn>
           </div>
-        </div>
 
-        <div className="max-w-2xl">
-          <FadeIn direction="up">
-            <h2 className="font-mono text-xl font-medium tracking-tight text-foreground sm:text-2xl">
-              About Me
-            </h2>
-          </FadeIn>
-          
-          <FadeIn delay={0.2} direction="up">
-            <div className="prose prose-neutral dark:prose-invert mt-6 max-w-none text-base leading-relaxed text-muted-foreground/90">
+          <div className="lg:col-span-8">
+            <div ref={textRef} className="prose prose-neutral dark:prose-invert max-w-none text-base leading-relaxed text-muted-foreground sm:text-lg sm:leading-relaxed">
               {bio.split('\n').map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
+                paragraph.trim() ? <p key={index}>{paragraph}</p> : <br key={index} />
               ))}
             </div>
-          </FadeIn>
+          </div>
         </div>
       </div>
     </section>

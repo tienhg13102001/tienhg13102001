@@ -96,7 +96,7 @@ export default async function ContactPage() {
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-1.5 text-lg font-medium text-foreground transition-colors hover:text-primary"
               >
-                Download résumé
+                Download resume
                 <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </Link>
             </div>
