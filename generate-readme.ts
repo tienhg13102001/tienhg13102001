@@ -51,14 +51,6 @@ async function main() {
   }
   readme += `  </p>\n\n`;
 
-  // GitHub Stats
-  if (githubUsername) {
-    readme += `  <p align="center">\n`;
-    readme += `    <img src="https://github-readme-stats.vercel.app/api?username=${githubUsername}&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" height="192px"/>\n`;
-    readme += `    <img src="https://github-readme-streak-stats.herokuapp.com/?user=${githubUsername}&theme=tokyonight&hide_border=true" alt="GitHub Streak" height="192px"/>\n`;
-    readme += `  </p>\n\n`;
-  }
-
   readme += `</div>\n\n`;
   
   readme += `---\n\n`;

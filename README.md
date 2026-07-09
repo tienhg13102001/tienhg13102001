@@ -11,11 +11,6 @@
     <a href="https://www.facebook.com/tienptgrh/"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" /></a>
   </p>
 
-  <p align="center">
-    <img src="https://github-readme-stats.vercel.app/api?username=tienhg13102001&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" height="192px"/>
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=tienhg13102001&theme=tokyonight&hide_border=true" alt="GitHub Streak" height="192px"/>
-  </p>
-
 </div>
 
 ---
