@@ -1,7 +1,8 @@
 import Link from "next/link";
-import { ArrowUpRight, FolderGit2 } from "lucide-react";
+import { ArrowUpRight, FolderGit2, Globe } from "lucide-react";
 import type { Project } from "@prisma/client";
 import { Badge } from "@/components/ui/badge";
+import { getFileUrl } from "@/lib/utils";
 
 export function ProjectCard({
   project,
@@ -22,7 +23,7 @@ export function ProjectCard({
         <div className="aspect-video w-full overflow-hidden border-b border-border bg-muted">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={project.coverImage}
+            src={getFileUrl(project.coverImage)}
             alt={project.title}
             className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
           />

@@ -1,6 +1,7 @@
 import type { Profile } from "@prisma/client";
 import { FadeIn } from "@/components/ui/fade-in";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { getFileUrl } from "@/lib/utils";
 
 function getInitials(name: string) {
   return name
@@ -22,7 +23,7 @@ export function AboutSection({ profile }: { profile: Profile | null }) {
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-20 sm:px-6 lg:grid-cols-[auto_1fr] lg:gap-16 lg:px-8">
         <div className="flex items-start gap-4 lg:flex-col lg:gap-6">
           <Avatar size="lg" className="size-16 lg:size-24">
-            <AvatarImage src={profile?.avatarUrl ?? undefined} alt={fullName} />
+            <AvatarImage src={profile?.avatarUrl ? getFileUrl(profile.avatarUrl) : undefined} alt={fullName} />
             <AvatarFallback className="text-lg lg:text-2xl">
               {getInitials(fullName)}
             </AvatarFallback>

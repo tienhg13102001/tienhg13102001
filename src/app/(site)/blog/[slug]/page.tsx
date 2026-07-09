@@ -5,6 +5,7 @@ import { ArrowLeft } from "lucide-react";
 import { getPublishedPostBySlug } from "@/lib/queries";
 import { buttonVariants } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import { getFileUrl } from "@/lib/utils";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -79,7 +80,7 @@ export default async function BlogDetailPage({ params }: PageProps) {
         <div className="mt-10 overflow-hidden rounded-xl border border-border bg-muted">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={post.coverImage}
+            src={getFileUrl(post.coverImage)}
             alt={post.title}
             className="w-full object-cover"
           />

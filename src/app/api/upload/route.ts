@@ -34,7 +34,8 @@ export async function POST(req: NextRequest) {
     const filepath = join(uploadDir, filename);
     await writeFile(filepath, buffer);
 
-    const fileUrl = `${req.nextUrl.origin}/uploads/${filename}`;
+    // Chỉ lưu phần path phía sau (Relative Path)
+    const fileUrl = `/uploads/${filename}`;
 
     return NextResponse.json({ url: fileUrl });
   } catch (e) {

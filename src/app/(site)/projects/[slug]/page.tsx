@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowUpRight, FolderGit2 } from "lucide-react";
 import { getProjectBySlug } from "@/lib/queries";
 import { Badge } from "@/components/ui/badge";
+import { getFileUrl } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
@@ -93,12 +95,12 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       </div>
 
       {project.coverImage ? (
-        <div className="mt-10 overflow-hidden rounded-xl border border-border bg-muted">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={project.coverImage}
+        <div className="relative mt-10 aspect-video w-full overflow-hidden rounded-xl border border-border bg-muted">
+          <Image
+            src={getFileUrl(project.coverImage)}
             alt={project.title}
-            className="w-full object-cover"
+            fill
+            className="object-cover"
           />
         </div>
       ) : null}
