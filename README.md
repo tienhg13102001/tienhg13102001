@@ -52,37 +52,15 @@ mindmap
 
 ## 🏢 Experience & Education
 
-### 💼 Web Developer @ Koolsoft Inc
-> 📅 *Dec 2024 - Present* &nbsp; | &nbsp; 📍 *Ha Noi*
-
-A software company operating in the EdTech sector. Developing web and mobile applications, providing e-learning solutions and online training systems for businesses and organizations.
-(Related projects: Architecting core services for learning management systems, handling multi-format educational materials, and optimizing UI components and RESTful APIs).
-
-### 💼 Web Developer @ DCASKS
-> 📅 *Dec 2024 - Present* &nbsp; | &nbsp; 📍 *Remote*
-
-<p>Developing a blockchain ecosystem for the wine and spirits industry (RWA tokenization).</p><ol><li data-list="bullet"><span class="ql-ui" contenteditable="false"></span>DApp &amp; Smart Contracts: Developed a Telegram Mini App using Next.js 15, interacting with Smart Contracts (minting, real-time bidding) via Viem, and integrating Reown (WalletConnect). Built a comprehensive admin dashboard to monitor live auctions.</li><li data-list="bullet"><span class="ql-ui" contenteditable="false"></span>Backend &amp; Real-time: Built a modular NestJS backend, Telegram bot logic, and utilized Socket.io and Redis Pub/Sub to deliver instant, real-time notifications for auction statuses.</li></ol>
-
-### 💼 Nodejs Developer @ VITECH GROUP
-> 📅 *Jun 2024 - Dec 2024* &nbsp; | &nbsp; 📍 *Hanoi*
-
-Developed custom Windows applications designed to serve enterprise clients, community users, and internal business operations.
-• Highlighted Project (MKT TIKPRO): Built a cross-platform desktop application using Electron.js to concurrently manage thousands of social media accounts. Integrated Puppeteer/Playwright for browser automation, extracting potential leads, automating engagement workflows, and minimizing ban rates.
-
-### 💼 Frontend Developer @ ROCKET GAME STUDIO
-> 📅 *Jun 2023 - Jun 2024* &nbsp; | &nbsp; 📍 *Hanoi*
-
-A leading mobile game development and publishing company in Vietnam. Participated in developing user interfaces and features targeting the global market for Casual, Hyper-casual, and Mid-core game genres. Optimized performance and user experience for products with tens of millions of downloads worldwide.
-
-### 💼 Web Developer Intern @ NTQ Solution JSC
-> 📅 *Jan 2023 - Jun 2023* &nbsp; | &nbsp; 📍 *Hanoi*
-
-Web Developer Intern at a premier IT Outsourcing company. Assisted in developing modules for software outsourcing projects and delivering digital transformation services for clients in Japan, Korea, Europe, and the US. Ensured code maintainability and acquired standard international software development processes.
-
-### 🎓 Information Technology Engineer @ Hanoi University of Civil Engineering
-> 📅 *Aug 2019 - Apr 2024* &nbsp; | &nbsp; 📍 *Hanoi*
-
-Graduated with a major in Information Technology. Acquired a strong foundation in computer science, data structures, algorithms, and practical software development methodologies.
+```mermaid
+timeline
+    Dec 2024 to Present : 💼 Web Developer @ Koolsoft Inc : 📍 Ha Noi
+    Dec 2024 to Present : 💼 Web Developer @ DCASKS : 📍 Remote
+    Jun 2024 to Dec 2024 : 💼 Nodejs Developer @ VITECH GROUP : 📍 Hanoi
+    Jun 2023 to Jun 2024 : 💼 Frontend Developer @ ROCKET GAME STUDIO : 📍 Hanoi
+    Jan 2023 to Jun 2023 : 💼 Web Developer Intern @ NTQ Solution JSC : 📍 Hanoi
+    Aug 2019 to Apr 2024 : 🎓 Information Technology Engineer @ Hanoi University of Civil Engineering : 📍 Hanoi
+```
 
 ## 🚀 Featured Projects
 

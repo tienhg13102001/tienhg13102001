@@ -99,17 +99,21 @@ async function main() {
 
   if (experiences.length > 0) {
     readme += `## 🏢 Experience & Education\n\n`;
+    readme += `\`\`\`mermaid\n`;
+    readme += `timeline\n`;
+    
     for (const exp of experiences) {
       const start = new Date(exp.startDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
       const end = exp.current ? 'Present' : (exp.endDate ? new Date(exp.endDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' }) : start);
       
       const emoji = exp.type === 'WORK' ? '💼' : '🎓';
-      readme += `### ${emoji} ${exp.title} @ ${exp.organization}\n`;
-      readme += `> 📅 *${start} - ${end}* &nbsp; | &nbsp; 📍 *${exp.location || 'Remote'}*\n\n`;
-      if (exp.description) {
-        readme += `${exp.description}\n\n`;
-      }
+      // Replace colons in text to prevent mermaid parse errors
+      const titleOrg = `${emoji} ${exp.title} @ ${exp.organization}`.replace(/:/g, '-');
+      const location = `📍 ${exp.location || 'Remote'}`.replace(/:/g, '-');
+      
+      readme += `    ${start} to ${end} : ${titleOrg} : ${location}\n`;
     }
+    readme += `\`\`\`\n\n`;
   }
 
   if (projects.length > 0) {
