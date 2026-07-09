@@ -61,17 +61,43 @@ async function main() {
 
   if (skills.length > 0) {
     readme += `## 🛠️ Tech Stack & Skills\n\n`;
+    
+    // Mermaid Tree Chart
+    readme += `\`\`\`mermaid\n`;
+    readme += `graph LR\n`;
+    readme += `  Root((Tech Stack))\n`;
+    
     const categories = Array.from(new Set(skills.map(s => s.category || "Other")));
+    let nodeId = 0;
+    
+    for (const cat of categories) {
+      const catId = `cat_${nodeId++}`;
+      readme += `  Root --> ${catId}["${cat}"]\n`;
+      readme += `  style ${catId} fill:#27272a,stroke:#38bdf8,stroke-width:2px,color:#fff\n`;
+      
+      const catSkills = skills.filter(s => (s.category || "Other") === cat);
+      for (const skill of catSkills) {
+        const skillId = `skill_${nodeId++}`;
+        readme += `  ${catId} --- ${skillId}("${skill.name}")\n`;
+        readme += `  style ${skillId} fill:#18181b,stroke:#52525b,stroke-width:1px,color:#d4d4d8\n`;
+      }
+    }
+    
+    readme += `  style Root fill:#0ea5e9,stroke:#0369a1,stroke-width:2px,color:#fff\n`;
+    readme += `\`\`\`\n\n`;
+
+    // Compact Badge Grid (Optional, keep for colorful logos)
+    readme += `<p align="center">\n`;
     for (const cat of categories) {
       const catSkills = skills.filter(s => (s.category || "Other") === cat);
-      readme += `**${cat}**<br>\n`;
-      // Generate badges for skills
       const skillBadges = catSkills.map(s => {
-        const name = encodeURIComponent(s.name);
-        return `<img src="https://img.shields.io/badge/-${name}-27272a?style=flat&logo=${name}&logoColor=white" alt="${s.name}" />`;
+        // format name for shield.io: replace spaces and hyphens if needed, or just url encode
+        const rawName = s.name.split('/')[0].trim(); // take first part for logo search
+        return `<img src="https://img.shields.io/badge/-${encodeURIComponent(s.name)}-27272a?style=flat&logo=${encodeURIComponent(rawName)}&logoColor=white" alt="${s.name}" />`;
       });
-      readme += `<p>${skillBadges.join(" ")}</p>\n\n`;
+      readme += `  ${skillBadges.join(" ")}<br>\n`;
     }
+    readme += `</p>\n\n`;
   }
 
   if (experiences.length > 0) {
