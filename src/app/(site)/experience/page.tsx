@@ -18,7 +18,7 @@ function formatDate(date: Date) {
 
 function formatRange(exp: Experience) {
   const start = formatDate(exp.startDate);
-  if (exp.current) return `${start} — Hiện tại`;
+  if (exp.current) return `${start} — PRESENT`;
   if (exp.endDate) return `${start} — ${formatDate(exp.endDate)}`;
   return start;
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
 import { getPublishedPostBySlug } from "@/lib/queries";
 import { buttonVariants } from "@/components/ui/button";
@@ -77,19 +78,21 @@ export default async function BlogDetailPage({ params }: PageProps) {
       ) : null}
 
       {post.coverImage ? (
-        <div className="mt-10 overflow-hidden rounded-xl border border-border bg-muted">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+        <div className="mt-10 overflow-hidden rounded-xl border border-border bg-muted relative aspect-[16/9]">
+          <Image
             src={getFileUrl(post.coverImage)}
             alt={post.title}
-            className="w-full object-cover"
+            fill
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 800px"
+            className="object-cover"
           />
         </div>
       ) : null}
 
       <Separator className="my-10" />
 
-      <div 
+      <div
         className="prose prose-neutral dark:prose-invert max-w-none text-base leading-relaxed"
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
