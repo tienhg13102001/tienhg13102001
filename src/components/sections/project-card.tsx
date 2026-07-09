@@ -28,6 +28,8 @@ export function ProjectCard({
             src={getFileUrl(project.coverImage)}
             alt={project.title}
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            priority={index < 4} // Ưu tiên tải nhanh 4 ảnh đầu
             className="object-cover object-top"
           />
         </div>

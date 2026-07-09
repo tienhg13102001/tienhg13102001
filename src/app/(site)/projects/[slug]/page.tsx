@@ -100,6 +100,8 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             src={getFileUrl(project.coverImage)}
             alt={project.title}
             fill
+            priority
+            sizes="(max-width: 1024px) 100vw, 1024px"
             className="object-cover object-top"
           />
         </div>
