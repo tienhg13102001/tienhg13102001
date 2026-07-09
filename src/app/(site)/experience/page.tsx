@@ -56,7 +56,7 @@ export default async function ExperiencePage() {
               <FadeIn direction="up" delay={0.2 + (i % 5) * 0.1}>
                 <span
                   className={cn(
-                    "absolute top-1 -left-[calc(2rem+4.5px)] size-2.5 rounded-full border-2 border-background ring-2 ring-border transition-colors",
+                    "absolute top-0 -left-[37.5px] size-2.5 rounded-full border-2 border-background ring-2 ring-border transition-colors",
                     exp.current ? "bg-primary ring-primary/40" : "bg-muted-foreground/50"
                   )}
                 />
