@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "entries": {
+    "1bb6914bc42b891c26d46c8ae2fd4f44071f59862e89dc550f4c82877b700216": {
+      "last_emitted_at_ms": 1783507298063,
+      "message": "The boulder never stops. Continue until all tasks complete."
+    },
+    "79a93d4a2f8f50b95f852280616242fee1855dc99a3c75211917f55e72e95fae": {
+      "last_emitted_at_ms": 1783507108273,
+      "message": "Use parallel execution for independent tasks. Use run_in_background for long operations (npm install, builds, tests)."
+    },
+    "445ed27a3872b681d98190bae61ccb84954e1bc4e140df5370be958dee776b3a": {
+      "last_emitted_at_ms": 1783507068417,
+      "message": "Verify changes work after editing. Test functionality before marking complete."
+    },
+    "b0f5cb03649ffccec920a7da1aa1a81cc0625dfb66a8f7b5f876035271b06fa5": {
+      "last_emitted_at_ms": 1783506940069,
+      "message": "Spawning agent: oh-my-claudecode:executor (sonnet) | Task: Build admin CMS UI"
+    },
+    "466399dafa2d20f60587180bad0a07358eb7f2bce724df0ff682f038ad33f5ad": {
+      "last_emitted_at_ms": 1783506910481,
+      "message": "Read multiple files in parallel when possible for faster analysis."
+    },
+    "0a4355637ca1d4222cc5620fe4786dd72477e7a39bc3e2d3f5b9e5bda337324e": {
+      "last_emitted_at_ms": 1783506901825,
+      "message": "Spawning agent: oh-my-claudecode:designer (sonnet) | Task: Build public portfolio UI"
+    }
+  },
+  "updated_at": "2026-07-08T10:41:38.063Z"
+}

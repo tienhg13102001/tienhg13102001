@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"npx eslint \\\"src/app/(site)/**/*.tsx\\\" \\\"src/components/site-header.tsx\\\" \\\"src/components/site-footer.tsx\\\" \\\"src/components/theme-toggle.tsx\\\" \\\"src/components/sections/**/*.tsx\\\" 2>&1\"}",
+  "error": "Exit code 2\n\nOops! Something went wrong! :(\n\nESLint: 9.39.4\n\nTypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'Object'\n    |     property 'configs' -> object with constructor 'Object'\n    |     property 'flat' -> object with constructor 'Object'\n    |     ...\n    |     property 'plugins' -> object with constructor 'Object'\n    --- property 'react' closes the circle\nReferenced from: \n    at JSON.stringify (<anonymous>)\n    at file:///Volumes/SSD/Dev/por...",
+  "timestamp": "2026-07-08T10:40:30.896Z",
+  "retry_count": 1
+}

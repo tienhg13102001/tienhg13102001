@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TIEN NGUYEN VAN (BRYAN) | Fullstack Developer
 
-## Getting Started
+> Dedicated Fullstack Developer focusing on scalable architecture, performance optimization, and seamless user experiences.
 
-First, run the development server:
+## About Me
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+As a Fullstack Developer with a strong foundation in JavaScript and practical experience across both frontend (React/Vue) and backend (Node.js/Express/NestJS) technologies, I am eager to contribute to the development of high-quality web products. My goal is to continuously advance my technical expertise while delivering long-term value to the company.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📬 Contact
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Email:** [tienhg201@gmail.com](mailto:tienhg201@gmail.com)
+- **Location:** Hanoi, Vietnam
+- **Resume:** [View Resume](http://localhost:3001/uploads/1783568175752-717328712-TIEN-NGUYEN-BRYAN-TopCV.vn-160626.163539.pdf)
+- **GitHub:** [Profile](https://github.com/tienhg13102001/tienhg13102001)
+- **LinkedIn:** [Profile](https://www.linkedin.com/in/bryan-tien-nguyen/)
+- **Facebook:** [Profile](https://www.facebook.com/tienptgrh/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 💻 Skills
 
-## Learn More
+- **Backend:** Node.js
+- **Database:** PostgreSQL, MongoDB
+- **DevOps:** Docker / Docker Compose
+- **Frontend:** React / Next.js
+- **Language:** Javascript, TypeScript
+- **Server:** Nginx, Linux / VPS
 
-To learn more about Next.js, take a look at the following resources:
+## 🏢 Experience & Education
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Web Developer @ Koolsoft Inc
+*Dec 2024 - Present* | Ha Noi
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+A software company operating in the EdTech sector. Developing web and mobile applications, providing e-learning solutions and online training systems for businesses and organizations.
+(Related projects: Architecting core services for learning management systems, handling multi-format educational materials, and optimizing UI components and RESTful APIs).
 
-## Deploy on Vercel
+### Web Developer @ DCASKS
+*Dec 2024 - Present* | Remote
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<p>Developing a blockchain ecosystem for the wine and spirits industry (RWA tokenization).</p><ol><li data-list="bullet"><span class="ql-ui" contenteditable="false"></span>DApp &amp; Smart Contracts: Developed a Telegram Mini App using Next.js 15, interacting with Smart Contracts (minting, real-time bidding) via Viem, and integrating Reown (WalletConnect). Built a comprehensive admin dashboard to monitor live auctions.</li><li data-list="bullet"><span class="ql-ui" contenteditable="false"></span>Backend &amp; Real-time: Built a modular NestJS backend, Telegram bot logic, and utilized Socket.io and Redis Pub/Sub to deliver instant, real-time notifications for auction statuses.</li></ol>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Nodejs Developer @ VITECH GROUP
+*Jun 2024 - Dec 2024* | Hanoi
+
+Developed custom Windows applications designed to serve enterprise clients, community users, and internal business operations.
+• Highlighted Project (MKT TIKPRO): Built a cross-platform desktop application using Electron.js to concurrently manage thousands of social media accounts. Integrated Puppeteer/Playwright for browser automation, extracting potential leads, automating engagement workflows, and minimizing ban rates.
+
+### Frontend Developer @ ROCKET GAME STUDIO
+*Jun 2023 - Jun 2024* | Hanoi
+
+A leading mobile game development and publishing company in Vietnam. Participated in developing user interfaces and features targeting the global market for Casual, Hyper-casual, and Mid-core game genres. Optimized performance and user experience for products with tens of millions of downloads worldwide.
+
+### Web Developer Intern @ NTQ Solution JSC
+*Jan 2023 - Jun 2023* | Hanoi
+
+Web Developer Intern at a premier IT Outsourcing company. Assisted in developing modules for software outsourcing projects and delivering digital transformation services for clients in Japan, Korea, Europe, and the US. Ensured code maintainability and acquired standard international software development processes.
+
+### Information Technology Engineer @ Hanoi University of Civil Engineering
+*Aug 2019 - Apr 2024* | Hanoi
+
+Graduated with a major in Information Technology. Acquired a strong foundation in computer science, data structures, algorithms, and practical software development methodologies.
+
+## 🚀 Featured Projects
+
+### Dự án mẫu
+Một dự án ví dụ để bạn thấy giao diện hiển thị.
+
+*Tags: Next.js, TypeScript*
+
+---
+*Generated from Portfolio Database*

@@ -1,0 +1,71 @@
+{
+  "updatedAt": "2026-07-08T10:41:10.647Z",
+  "missions": [
+    {
+      "id": "session:f397e5b2-a781-48d8-a839-ef0f8752321b:none",
+      "source": "session",
+      "name": "none",
+      "objective": "Session mission",
+      "createdAt": "2026-07-08T10:35:04.168Z",
+      "updatedAt": "2026-07-08T10:41:10.647Z",
+      "status": "running",
+      "workerCount": 2,
+      "taskCounts": {
+        "total": 2,
+        "pending": 0,
+        "blocked": 0,
+        "inProgress": 1,
+        "completed": 1,
+        "failed": 0
+      },
+      "agents": [
+        {
+          "name": "designer:ac9397c",
+          "role": "designer",
+          "ownership": "ac9397cc5d3a96449",
+          "status": "done",
+          "currentStep": null,
+          "latestUpdate": "completed",
+          "completedSummary": null,
+          "updatedAt": "2026-07-08T10:41:10.647Z"
+        },
+        {
+          "name": "executor:a55c322",
+          "role": "executor",
+          "ownership": "a55c3229f1ea308c7",
+          "status": "running",
+          "currentStep": null,
+          "latestUpdate": null,
+          "completedSummary": null,
+          "updatedAt": "2026-07-08T10:35:42.038Z"
+        }
+      ],
+      "timeline": [
+        {
+          "id": "session-start:ac9397cc5d3a96449:2026-07-08T10:35:04.168Z",
+          "at": "2026-07-08T10:35:04.168Z",
+          "kind": "update",
+          "agent": "designer:ac9397c",
+          "detail": "started designer:ac9397c",
+          "sourceKey": "session-start:ac9397cc5d3a96449"
+        },
+        {
+          "id": "session-start:a55c3229f1ea308c7:2026-07-08T10:35:42.038Z",
+          "at": "2026-07-08T10:35:42.038Z",
+          "kind": "update",
+          "agent": "executor:a55c322",
+          "detail": "started executor:a55c322",
+          "sourceKey": "session-start:a55c3229f1ea308c7"
+        },
+        {
+          "id": "session-stop:ac9397cc5d3a96449:2026-07-08T10:41:10.647Z",
+          "at": "2026-07-08T10:41:10.647Z",
+          "kind": "completion",
+          "agent": "designer:ac9397c",
+          "detail": "completed",
+          "sourceKey": "session-stop:ac9397cc5d3a96449"
+        }
+      ]
+    }
+  ]
+}
