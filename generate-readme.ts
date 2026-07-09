@@ -102,7 +102,9 @@ async function main() {
     readme += `\`\`\`mermaid\n`;
     readme += `timeline\n`;
     
-    for (const exp of experiences) {
+    // Reverse the array to display oldest first (left) to newest (right)
+    const chronologicalExperiences = [...experiences].reverse();
+    for (const exp of chronologicalExperiences) {
       const start = new Date(exp.startDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
       const end = exp.current ? 'Present' : (exp.endDate ? new Date(exp.endDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' }) : start);
       

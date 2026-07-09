@@ -54,12 +54,12 @@ mindmap
 
 ```mermaid
 timeline
-    Dec 2024 to Present : 💼 Web Developer @ Koolsoft Inc : 📍 Ha Noi
-    Dec 2024 to Present : 💼 Web Developer @ DCASKS : 📍 Remote
-    Jun 2024 to Dec 2024 : 💼 Nodejs Developer @ VITECH GROUP : 📍 Hanoi
-    Jun 2023 to Jun 2024 : 💼 Frontend Developer @ ROCKET GAME STUDIO : 📍 Hanoi
-    Jan 2023 to Jun 2023 : 💼 Web Developer Intern @ NTQ Solution JSC : 📍 Hanoi
     Aug 2019 to Apr 2024 : 🎓 Information Technology Engineer @ Hanoi University of Civil Engineering : 📍 Hanoi
+    Jan 2023 to Jun 2023 : 💼 Web Developer Intern @ NTQ Solution JSC : 📍 Hanoi
+    Jun 2023 to Jun 2024 : 💼 Frontend Developer @ ROCKET GAME STUDIO : 📍 Hanoi
+    Jun 2024 to Dec 2024 : 💼 Nodejs Developer @ VITECH GROUP : 📍 Hanoi
+    Dec 2024 to Present : 💼 Web Developer @ DCASKS : 📍 Remote
+    Dec 2024 to Present : 💼 Web Developer @ Koolsoft Inc : 📍 Ha Noi
 ```
 
 ## 🚀 Featured Projects
