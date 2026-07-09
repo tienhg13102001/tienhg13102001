@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getProjects } from "@/lib/queries";
 import { ProjectCard } from "@/components/sections/project-card";
+import { FadeIn } from "@/components/ui/fade-in";
 
 export const metadata: Metadata = {
   title: "Projects | Portfolio",
@@ -29,7 +30,9 @@ export default async function ProjectsPage() {
       ) : (
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
-            <ProjectCard key={project.id} project={project} index={index} />
+            <FadeIn key={project.id} delay={0.1 * index} direction="up">
+              <ProjectCard project={project} index={index} />
+            </FadeIn>
           ))}
         </div>
       )}

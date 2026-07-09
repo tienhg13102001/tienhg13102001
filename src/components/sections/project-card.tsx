@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { ArrowUpRight, FolderGit2, Globe } from "lucide-react";
+import Image from "next/image";
+import { ArrowUpRight, FolderGit2 } from "lucide-react";
 import type { Project } from "@prisma/client";
 import { Badge } from "@/components/ui/badge";
 import { getFileUrl } from "@/lib/utils";
@@ -12,7 +13,9 @@ export function ProjectCard({
   index: number;
 }) {
   return (
-    <article className="group relative flex flex-col overflow-hidden rounded-xl border border-border bg-card transition-all hover:-translate-y-1 hover:border-foreground/30 hover:shadow-lg hover:shadow-foreground/5">
+    <article
+      className="relative flex flex-col overflow-hidden rounded-xl border border-border bg-card"
+    >
       <Link
         href={`/projects/${project.slug}`}
         className="absolute inset-0 z-10"
@@ -20,12 +23,12 @@ export function ProjectCard({
       />
 
       {project.coverImage ? (
-        <div className="aspect-video w-full overflow-hidden border-b border-border bg-muted">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+        <div className="relative aspect-video w-full overflow-hidden border-b border-border bg-muted">
+          <Image
             src={getFileUrl(project.coverImage)}
             alt={project.title}
-            className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
+            fill
+            className="object-cover object-top"
           />
         </div>
       ) : (
@@ -39,7 +42,7 @@ export function ProjectCard({
           <span className="font-mono text-xs text-muted-foreground/60">
             {String(index + 1).padStart(2, "0")}
           </span>
-          <ArrowUpRight className="size-4 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-foreground" />
+          <ArrowUpRight className="size-4 text-muted-foreground" />
         </div>
 
         <h3 className="text-lg font-semibold tracking-tight text-foreground">
@@ -53,7 +56,7 @@ export function ProjectCard({
         ) : null}
 
         <div className="mt-auto flex flex-wrap items-center gap-1.5 pt-6">
-          {project.tags.slice(0, 4).map((tag) => (
+          {(project.tags || []).slice(0, 4).map((tag) => (
             <Badge key={tag} variant="outline" className="font-mono">
               {tag}
             </Badge>
@@ -65,7 +68,7 @@ export function ProjectCard({
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Repository"
-                className="flex size-7 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                className="flex size-7 items-center justify-center rounded-md text-muted-foreground"
               >
                 <FolderGit2 className="size-3.5" />
               </Link>

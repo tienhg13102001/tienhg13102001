@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import type { Project } from "@prisma/client";
 import { buttonVariants } from "@/components/ui/button";
 import { ProjectCard } from "@/components/sections/project-card";
+import { FadeIn } from "@/components/ui/fade-in";
 
 export function FeaturedProjectsSection({ projects }: { projects: Project[] }) {
   if (projects.length === 0) return null;
@@ -33,7 +34,9 @@ export function FeaturedProjectsSection({ projects }: { projects: Project[] }) {
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
-            <ProjectCard key={project.id} project={project} index={index} />
+            <FadeIn key={project.id} delay={0.1 * index} direction="up">
+              <ProjectCard project={project} index={index} />
+            </FadeIn>
           ))}
         </div>
 

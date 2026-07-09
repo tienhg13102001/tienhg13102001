@@ -62,7 +62,7 @@ export default async function BlogDetailPage({ params }: PageProps) {
 
       {post.tags.length > 0 ? (
         <div className="mt-8 flex flex-wrap gap-1.5 font-mono text-xs text-muted-foreground">
-          {post.tags.map((tag) => (
+          {(post.tags || []).map((tag) => (
             <span key={tag}>#{tag}</span>
           ))}
         </div>

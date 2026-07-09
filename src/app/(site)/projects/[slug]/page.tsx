@@ -52,7 +52,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       </Link>
 
       <div className="mt-8 flex flex-wrap items-center gap-1.5">
-        {project.tags.map((tag) => (
+        {(project.tags || []).map((tag) => (
           <Badge key={tag} variant="outline" className="font-mono">
             {tag}
           </Badge>
@@ -100,7 +100,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             src={getFileUrl(project.coverImage)}
             alt={project.title}
             fill
-            className="object-cover"
+            className="object-cover object-top"
           />
         </div>
       ) : null}
