@@ -1,5 +1,6 @@
 import type { Skill } from "@prisma/client";
 import { cn } from "@/lib/utils";
+import { FadeIn } from "@/components/ui/fade-in";
 
 function SkillMeter({ level }: { level: number }) {
   const clamped = Math.min(5, Math.max(1, level));
@@ -43,25 +44,27 @@ export function SkillsSection({ skills }: { skills: Skill[] }) {
         </div>
 
         <div className="grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
-          {Array.from(groups.entries()).map(([category, items]) => (
-            <div key={category}>
-              <h3 className="mb-4 font-mono text-xs tracking-widest text-muted-foreground uppercase">
-                {category}
-              </h3>
-              <ul className="space-y-3">
-                {items.map((skill) => (
-                  <li
-                    key={skill.id}
-                    className="flex items-center justify-between gap-4"
-                  >
-                    <span className="text-sm text-foreground">
-                      {skill.name}
-                    </span>
-                    <SkillMeter level={skill.level} />
-                  </li>
-                ))}
-              </ul>
-            </div>
+          {Array.from(groups.entries()).map(([category, items], idx) => (
+            <FadeIn key={category} delay={0.1 * idx} direction="up">
+              <div>
+                <h3 className="mb-4 font-mono text-xs tracking-widest text-muted-foreground uppercase">
+                  {category}
+                </h3>
+                <ul className="space-y-3">
+                  {items.map((skill) => (
+                    <li
+                      key={skill.id}
+                      className="flex items-center justify-between gap-4"
+                    >
+                      <span className="text-sm text-foreground">
+                        {skill.name}
+                      </span>
+                      <SkillMeter level={skill.level} />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </FadeIn>
           ))}
         </div>
       </div>

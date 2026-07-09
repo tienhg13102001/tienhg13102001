@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight, ArrowUpRight, MapPin } from "lucide-react";
 import type { Profile } from "@prisma/client";
 import { buttonVariants } from "@/components/ui/button";
+import { FadeIn } from "@/components/ui/fade-in";
 
 export function HeroSection({ profile }: { profile: Profile | null }) {
   const fullName = profile?.fullName ?? "Your Name";
@@ -19,44 +20,43 @@ export function HeroSection({ profile }: { profile: Profile | null }) {
       />
 
       <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
-        <div
-          className="mb-8 inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 font-mono text-xs text-muted-foreground animate-in fade-in slide-in-from-bottom-2 duration-700 fill-mode-both"
-        >
-          <span className="relative flex size-1.5">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary/60" />
-            <span className="relative inline-flex size-1.5 rounded-full bg-primary" />
-          </span>
-          available for new work
-          {location ? (
-            <>
-              <span className="text-border">/</span>
-              <MapPin className="size-3" />
-              {location}
-            </>
-          ) : null}
-        </div>
+        <FadeIn delay={0.1} direction="up">
+          <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 font-mono text-xs text-muted-foreground">
+            <span className="relative flex size-1.5">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary/60" />
+              <span className="relative inline-flex size-1.5 rounded-full bg-primary" />
+            </span>
+            available for new work
+            {location ? (
+              <>
+                <span className="text-border">/</span>
+                <MapPin className="size-3" />
+                {location}
+              </>
+            ) : null}
+          </div>
+        </FadeIn>
 
-        <h1
-          className="max-w-4xl text-5xl leading-[1.05] font-semibold tracking-tight text-foreground animate-in fade-in slide-in-from-bottom-3 duration-700 delay-75 fill-mode-both sm:text-6xl lg:text-7xl"
-        >
-          {fullName}
-        </h1>
+        <FadeIn delay={0.2} direction="up">
+          <h1 className="max-w-4xl text-5xl leading-[1.05] font-semibold tracking-tight text-foreground sm:text-6xl lg:text-7xl">
+            {fullName}
+          </h1>
+        </FadeIn>
 
-        <p
-          className="mt-4 max-w-2xl font-mono text-lg text-muted-foreground animate-in fade-in slide-in-from-bottom-3 duration-700 delay-150 fill-mode-both sm:text-xl"
-        >
-          {title}
-        </p>
+        <FadeIn delay={0.3} direction="up">
+          <p className="mt-4 max-w-2xl font-mono text-lg text-muted-foreground sm:text-xl">
+            {title}
+          </p>
+        </FadeIn>
 
-        <p
-          className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground animate-in fade-in slide-in-from-bottom-3 duration-700 delay-200 fill-mode-both"
-        >
-          {tagline}
-        </p>
+        <FadeIn delay={0.4} direction="up">
+          <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
+            {tagline}
+          </p>
+        </FadeIn>
 
-        <div
-          className="mt-10 flex flex-wrap items-center gap-3 animate-in fade-in slide-in-from-bottom-3 duration-700 delay-300 fill-mode-both"
-        >
+        <FadeIn delay={0.5} direction="up">
+          <div className="mt-10 flex flex-wrap items-center gap-3">
           <Link
             href="/projects"
             className={buttonVariants({ size: "lg", className: "group" })}
@@ -75,7 +75,8 @@ export function HeroSection({ profile }: { profile: Profile | null }) {
             Get in touch
             <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </Link>
-        </div>
+          </div>
+        </FadeIn>
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import type { Profile } from "@prisma/client";
+import { FadeIn } from "@/components/ui/fade-in";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 function getInitials(name: string) {
@@ -32,12 +33,19 @@ export function AboutSection({ profile }: { profile: Profile | null }) {
         </div>
 
         <div className="max-w-2xl">
-          <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-            A little about me
-          </h2>
-          <p className="mt-6 text-lg leading-relaxed whitespace-pre-wrap text-muted-foreground">
-            {bio}
-          </p>
+          <FadeIn direction="up">
+            <h2 className="font-mono text-xl font-medium tracking-tight text-foreground sm:text-2xl">
+              About Me
+            </h2>
+          </FadeIn>
+          
+          <FadeIn delay={0.2} direction="up">
+            <div className="prose prose-neutral dark:prose-invert mt-6 max-w-none text-base leading-relaxed text-muted-foreground/90">
+              {bio.split('\n').map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
+          </FadeIn>
         </div>
       </div>
     </section>

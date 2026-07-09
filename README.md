@@ -71,6 +71,30 @@ timeline
       <p>Một dự án ví dụ để bạn thấy giao diện hiển thị.</p>
       <code>Next.js</code> <code>TypeScript</code><br><br>
     </td>
+    <td width="50%" valign="top">
+      <h4>DCASKS</h4>
+      <p>Web3 & Telegram Mini App for the wine and spirits industry, featuring Real-World Asset (RWA) tokenization, smart contracts, and real-time auctions.</p>
+      <code>Next.js 15</code> <code>NestJS</code> <code>Wagmi/Viem</code> <code>PostgreSQL</code> <code>Redis</code> <code>Telegram Bot API</code><br><br>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>Estudyme</h4>
+      <p>E-learning platform development focusing on pixel-perfect frontend interfaces, state management, and scalable Express RESTful APIs for complex course management.</p>
+      <code>Next.js</code> <code>Express.js</code> <code>Material UI</code> <code>Redux Toolkit</code> <code>Figma</code><br><br>
+    </td>
+    <td width="50%" valign="top">
+      <h4>Ngoại ngữ 24h</h4>
+      <p>Refactored legacy components and built automated internal tooling and RESTful APIs for a popular English learning platform in Vietnam.</p>
+      <code>Node.js</code> <code>Express.js</code> <code>MongoDB</code> <code>React.js</code> <code>Styled-components</code><br><br>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>MKT TIKPRO</h4>
+      <p>Cross-platform Electron desktop application for social media automation, lead extraction, and data mining using browser automation (Puppeteer).</p>
+      <code>Electron.js</code> <code>React.js</code> <code>Puppeteer</code> <code>SQLite</code> <code>Socket.io</code> <code>Tailwind CSS</code><br><br>
+    </td>
     <td width="50%" valign="top"></td>
   </tr>
 </table>
