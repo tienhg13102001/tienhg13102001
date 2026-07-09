@@ -1,7 +1,4 @@
 import { NextRequest, NextResponse } from "next/server";
-import { writeFile, mkdir } from "fs/promises";
-import { join } from "path";
-import { existsSync } from "fs";
 
 export async function POST(req: NextRequest) {
   try {
@@ -17,25 +14,39 @@ export async function POST(req: NextRequest) {
 
     const bytes = await file.arrayBuffer();
     const buffer = Buffer.from(bytes);
+    const base64Image = buffer.toString("base64");
 
-    // Create a unique filename
-    const uniqueSuffix = `${Date.now()}-${Math.round(Math.random() * 1e9)}`;
-    // Sanitize original filename (remove special chars except dot, dash, underscore)
-    const originalName = file.name.replace(/[^a-zA-Z0-9.\-_]/g, "");
-    const filename = `${uniqueSuffix}-${originalName}`;
-
-    // Define path: public/uploads
-    const uploadDir = join(process.cwd(), "public", "uploads");
-    
-    if (!existsSync(uploadDir)) {
-      await mkdir(uploadDir, { recursive: true });
+    const imgbbApiKey = process.env.IMGBB_API_KEY;
+    if (!imgbbApiKey) {
+      console.error("Thiếu cấu hình IMGBB_API_KEY trong .env");
+      return NextResponse.json(
+        { error: "Lỗi cấu hình server." },
+        { status: 500 }
+      );
     }
 
-    const filepath = join(uploadDir, filename);
-    await writeFile(filepath, buffer);
+    // Upload to ImgBB using FormData
+    const imgbbFormData = new FormData();
+    imgbbFormData.append("image", base64Image);
 
-    // Chỉ lưu phần path phía sau (Relative Path)
-    const fileUrl = `/uploads/${filename}`;
+    // Note: Optionally add name to ImgBB
+    // const originalName = file.name.replace(/[^a-zA-Z0-9.\-_]/g, "");
+    // imgbbFormData.append("name", originalName);
+
+    const imgbbResponse = await fetch(`https://api.imgbb.com/1/upload?key=${imgbbApiKey}`, {
+      method: "POST",
+      body: imgbbFormData,
+    });
+
+    const data = await imgbbResponse.json();
+
+    if (!data.success) {
+      console.error("Lỗi từ ImgBB:", data);
+      throw new Error(data.error?.message || "Lỗi từ ImgBB");
+    }
+
+    // data.data.url contains the direct image link (e.g., https://i.ibb.co/...)
+    const fileUrl = data.data.url;
 
     return NextResponse.json({ url: fileUrl });
   } catch (e) {
