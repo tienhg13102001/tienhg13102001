@@ -15,35 +15,71 @@ async function main() {
     return;
   }
 
-  let readme = `# ${profile.fullName} | ${profile.title}\n\n`;
-  if (profile.tagline) readme += `> ${profile.tagline}\n\n`;
-  
-  if (profile.bio) {
-    readme += `## About Me\n\n${profile.bio}\n\n`;
+  const socials = (profile.socials as any) || {};
+  let githubUsername = "";
+  if (socials.github) {
+    const parts = socials.github.split("/");
+    githubUsername = parts[parts.length - 1] || parts[parts.length - 2]; // handle trailing slash
   }
 
-  readme += `## 📬 Contact\n\n`;
-  if (profile.email) readme += `- **Email:** [${profile.email}](mailto:${profile.email})\n`;
-  if (profile.location) readme += `- **Location:** ${profile.location}\n`;
-  if (profile.resumeUrl) readme += `- **Resume:** [View Resume](${profile.resumeUrl})\n`;
+  let readme = `<div align="center">\n\n`;
   
-  const socials = profile.socials as any;
-  if (socials) {
-    if (socials.github) readme += `- **GitHub:** [Profile](${socials.github})\n`;
-    if (socials.linkedin) readme += `- **LinkedIn:** [Profile](${socials.linkedin})\n`;
-    if (socials.facebook) readme += `- **Facebook:** [Profile](${socials.facebook})\n`;
-    if (socials.website) readme += `- **Website:** [${socials.website}](${socials.website})\n`;
+  // Header Animation
+  const typingUrl = `https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=30&pause=1000&color=22D3EE&center=true&vCenter=true&width=600&lines=${encodeURIComponent(profile.fullName)};${encodeURIComponent(profile.title)}`;
+  readme += `  <img src="${typingUrl}" alt="Typing SVG" />\n\n`;
+
+  if (profile.tagline) {
+    readme += `  <p align="center"><b>${profile.tagline}</b></p>\n\n`;
   }
-  readme += `\n`;
+
+  // Social Badges
+  readme += `  <p align="center">\n`;
+  if (profile.email) {
+    readme += `    <a href="mailto:${profile.email}"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>\n`;
+  }
+  if (socials.linkedin) {
+    readme += `    <a href="${socials.linkedin}"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>\n`;
+  }
+  if (socials.github) {
+    readme += `    <a href="${socials.github}"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>\n`;
+  }
+  if (socials.facebook) {
+    readme += `    <a href="${socials.facebook}"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" /></a>\n`;
+  }
+  if (socials.website) {
+    readme += `    <a href="${socials.website}"><img src="https://img.shields.io/badge/Website-3b82f6?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website" /></a>\n`;
+  }
+  readme += `  </p>\n\n`;
+
+  // GitHub Stats
+  if (githubUsername) {
+    readme += `  <p align="center">\n`;
+    readme += `    <img src="https://github-readme-stats.vercel.app/api?username=${githubUsername}&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" height="192px"/>\n`;
+    readme += `    <img src="https://github-readme-streak-stats.herokuapp.com/?user=${githubUsername}&theme=tokyonight&hide_border=true" alt="GitHub Streak" height="192px"/>\n`;
+    readme += `  </p>\n\n`;
+  }
+
+  readme += `</div>\n\n`;
+  
+  readme += `---\n\n`;
+
+  if (profile.bio) {
+    readme += `## 👨‍💻 About Me\n\n${profile.bio}\n\n`;
+  }
 
   if (skills.length > 0) {
-    readme += `## 💻 Skills\n\n`;
+    readme += `## 🛠️ Tech Stack & Skills\n\n`;
     const categories = Array.from(new Set(skills.map(s => s.category || "Other")));
     for (const cat of categories) {
       const catSkills = skills.filter(s => (s.category || "Other") === cat);
-      readme += `- **${cat}:** ${catSkills.map(s => s.name).join(", ")}\n`;
+      readme += `**${cat}**<br>\n`;
+      // Generate badges for skills
+      const skillBadges = catSkills.map(s => {
+        const name = encodeURIComponent(s.name);
+        return `<img src="https://img.shields.io/badge/-${name}-27272a?style=flat&logo=${name}&logoColor=white" alt="${s.name}" />`;
+      });
+      readme += `<p>${skillBadges.join(" ")}</p>\n\n`;
     }
-    readme += `\n`;
   }
 
   if (experiences.length > 0) {
@@ -52,10 +88,10 @@ async function main() {
       const start = new Date(exp.startDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
       const end = exp.current ? 'Present' : (exp.endDate ? new Date(exp.endDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' }) : start);
       
-      readme += `### ${exp.title} @ ${exp.organization}\n`;
-      readme += `*${start} - ${end}*${exp.location ? ` | ${exp.location}` : ''}\n\n`;
+      const emoji = exp.type === 'WORK' ? '💼' : '🎓';
+      readme += `### ${emoji} ${exp.title} @ ${exp.organization}\n`;
+      readme += `> 📅 *${start} - ${end}* &nbsp; | &nbsp; 📍 *${exp.location || 'Remote'}*\n\n`;
       if (exp.description) {
-        // Strip HTML if it exists, or just leave it since Markdown supports HTML
         readme += `${exp.description}\n\n`;
       }
     }
@@ -63,23 +99,54 @@ async function main() {
 
   if (projects.length > 0) {
     readme += `## 🚀 Featured Projects\n\n`;
-    for (const proj of projects) {
-      readme += `### ${proj.title}\n`;
-      if (proj.summary) readme += `${proj.summary}\n\n`;
-      let links = [];
-      if (proj.liveUrl) links.push(`[Live Demo](${proj.liveUrl})`);
-      if (proj.repoUrl) links.push(`[Source Code](${proj.repoUrl})`);
-      if (links.length > 0) readme += `${links.join(" | ")}\n\n`;
-      if (proj.tags.length > 0) {
-        readme += `*Tags: ${proj.tags.join(", ")}*\n\n`;
+    
+    // Create a table for projects to make them look like cards
+    readme += `<table>\n`;
+    for (let i = 0; i < projects.length; i += 2) {
+      const p1 = projects[i];
+      const p2 = projects[i + 1];
+      
+      readme += `  <tr>\n`;
+      
+      // Column 1
+      readme += `    <td width="50%" valign="top">\n`;
+      readme += `      <h4>${p1.title}</h4>\n`;
+      if (p1.summary) readme += `      <p>${p1.summary}</p>\n`;
+      if (p1.tags.length > 0) readme += `      <code>${p1.tags.join("</code> <code>")}</code><br><br>\n`;
+      let links1 = [];
+      if (p1.liveUrl) links1.push(`<a href="${p1.liveUrl}">Live Demo</a>`);
+      if (p1.repoUrl) links1.push(`<a href="${p1.repoUrl}">Source Code</a>`);
+      if (links1.length > 0) readme += `      ${links1.join(" | ")}\n`;
+      readme += `    </td>\n`;
+      
+      // Column 2
+      if (p2) {
+        readme += `    <td width="50%" valign="top">\n`;
+        readme += `      <h4>${p2.title}</h4>\n`;
+        if (p2.summary) readme += `      <p>${p2.summary}</p>\n`;
+        if (p2.tags.length > 0) readme += `      <code>${p2.tags.join("</code> <code>")}</code><br><br>\n`;
+        let links2 = [];
+        if (p2.liveUrl) links2.push(`<a href="${p2.liveUrl}">Live Demo</a>`);
+        if (p2.repoUrl) links2.push(`<a href="${p2.repoUrl}">Source Code</a>`);
+        if (links2.length > 0) readme += `      ${links2.join(" | ")}\n`;
+        readme += `    </td>\n`;
+      } else {
+        readme += `    <td width="50%" valign="top"></td>\n`;
       }
+      
+      readme += `  </tr>\n`;
     }
+    readme += `</table>\n\n`;
   }
 
-  readme += `---\n*Generated from Portfolio Database*`;
+  // Footer animation
+  readme += `\n<div align="center">\n`;
+  readme += `  <img src="https://capsule-render.vercel.app/api?type=waving&color=38bdf8&height=100&section=footer" />\n`;
+  readme += `  <p><i>Auto-generated from Portfolio CMS Database 🚀</i></p>\n`;
+  readme += `</div>\n`;
 
   fs.writeFileSync(path.join(process.cwd(), "README.md"), readme, "utf-8");
-  console.log("README.md generated successfully!");
+  console.log("Enhanced README.md generated successfully!");
 }
 
 main()
